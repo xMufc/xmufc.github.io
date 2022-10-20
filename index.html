@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <title>Rebusy</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="content">
+            <img src="img/zagadka1.png" alt="pic1">
+            <div class="answer">
+                <div class="crossword">
+                    <div class="firstRow">
+                        <div class="pola"><img src="img/letter1.png" alt="letter1"><span onclick="klikanie('1')" id="1"></span></div>
+                        <div class="pola"><img src="img/letter2.png" alt="letter2"><span onclick="klikanie('2')" id="2"></span></div>
+                        <div class="pola"><img src="img/letter3.png" alt="letter3"><span onclick="klikanie('3')" id="3"></span></div>
+                        <div class="pola"><img src="img/letter4.png" alt="letter4"><span onclick="klikanie('4')" id="4"></span></div>
+                        <div class="pola"><img src="img/letter5.png" alt="letter5"><span onclick="klikanie('5')" id="5"></span></div>
+                        <div class="pola"><img src="img/letter6.png" alt="letter6"><span onclick="klikanie('6')" id="6"></span></div>
+                        <div class="pola"><img src="img/letter7.png" alt="letter7"><span onclick="klikanie('7')" id="7"></span></div>
+                    </div>
+                    <div class="secondRow">
+                        <div class="pola"><img src="img/letter8.png" alt="letter8"><span onclick="klikanie('8')" id="8"></span></div>
+                        <div class="pola"><img src="img/letter9.png" alt="letter9"><span onclick="klikanie('9')" id="9"></span></div>
+                        <div class="pola"><img src="img/letter10.png" alt="letter10"><span onclick="klikanie('10')" id="10"></span></div>
+                        <div class="pola"><img src="img/letter11.png" alt="letter11"><span onclick="klikanie('11')" id="11"></span></div>
+                        <div class="pola"><img src="img/letter12.png" alt="letter12"><span onclick="klikanie('12')" id="12"></span></div>
+                        <div class="pola"><img src="img/letter13.png" alt="letter13"><span onclick="klikanie('13')" id="13"></span></div>
+                        <div class="pola"><img src="img/letter7.png" alt="letter14"><span onclick="klikanie('14')" id="14"></span></div>
+                    </div>
+            </div>
+            <div class="btns">
+                <button class="jumpscare">Nie klikaj mnie</button>
+                <button class="check" onclick="check()">Sprawdź odpowiedź</button>    
+            </div>
+        </div>
+    </div>
+    <div id="vkeyboard" style="display: none;">
+        <h3>Wybierz literkę</h3>
+        <div id="kbtnlist"><div class="kbtn" onclick="typechar('A')">A</div><div class="kbtn" onclick="typechar('B')">B</div><div class="kbtn" onclick="typechar('C')">C</div><div class="kbtn" onclick="typechar('D')">D</div><div class="kbtn" onclick="typechar('E')">E</div><div class="kbtn" onclick="typechar('F')">F</div><div class="kbtn" onclick="typechar('G')">G</div><div class="kbtn" onclick="typechar('H')">H</div><div class="kbtn" onclick="typechar('I')">I</div><div class="kbtn" onclick="typechar('J')">J</div><div class="kbtn" onclick="typechar('K')">K</div><div class="kbtn" onclick="typechar('L')">L</div><div class="kbtn" onclick="typechar('M')">M</div><div class="kbtn" onclick="typechar('N')">N</div><div class="kbtn" onclick="typechar('O')">O</div><div class="kbtn" onclick="typechar('P')">P</div><div class="kbtn" onclick="typechar('Q')">Q</div><div class="kbtn" onclick="typechar('R')">R</div><div class="kbtn" onclick="typechar('S')">S</div><div class="kbtn" onclick="typechar('T')">T</div><div class="kbtn" onclick="typechar('U')">U</div><div class="kbtn" onclick="typechar('V')">V</div><div class="kbtn" onclick="typechar('W')">W</div><div class="kbtn" onclick="typechar('X')">X</div><div class="kbtn" onclick="typechar('Y')">Y</div><div class="kbtn" onclick="typechar('Z')">Z</div></div>
+        <button onclick="$('#vkeyboard').hide()" class="close"><i class="fa fa-times"></i> Zamknij</button>
+    </div>
+    <div class="hover_img" style="display: none;">
+        <img src="img/Poziomy.png" alt="image"/>
+   </div>
+   <div id="answer" style="display: none;">
+        <img src="https://cdn.discordapp.com/attachments/1024406304602726431/1032032718650880040/unknown.png" alt="paleto">
+   </div>
+</body>
+</html>

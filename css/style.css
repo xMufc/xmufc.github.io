@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(38,38,38);
+    background-color: none;
+    font-family: Roboto;
+}
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+#content{
+    background-image: url("https://cdn.discordapp.com/attachments/1021771926626107493/1024058319436009482/unknown.png");
+    background-color: #cccccc;
+    min-height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+}
+div{
+    text-align: center;
+}
+img{
+    height: 400px;
+    width: 500px;
+    margin-top: 50px;
+}
+.pass{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    background-image: none;
+}
+#vkeyboard{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(34, 37, 38, .85);
+    text-align: center;
+    display: none;
+    padding: 10px;
+    z-index: 13;
+}
+#vkeyboard h3{
+    color: rgb(255, 155, 7); 
+}
+.kbtn{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px; 
+    display: inline-block;
+    width: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(38,38,38, .85);
+    color: rgb(255, 155, 7); 
+}
+.close {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(38,38,38, .95);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: rgb(255, 155, 7); 
+    font-size: 20px;
+    font-weight: bold;
+}
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 30px 30px 0; 
+}
+.btns button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:unset;
+    color: rgb(255, 155, 7);
+    font-weight: 900;
+    font-size: 15px;
+    background-color: rgb(38,38,38,.85);
+    margin-right: 20px;
+    cursor: pointer; 
+    outline-style: none;
+}
+.btns button:hover{
+    background-color: rgb(38,38,38,.85);
+    box-shadow: none;
+    outline: 3px solid black;
+}
+.crossword{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.crossword span {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    margin-left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38,38,38, .80);
+    border-radius: 10px;
+}
+.crossword .pola span{
+    font-size: 30px;
+    color: rgb(255, 155, 7);
+}
+.pola{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pola img{
+    width: 68px;
+    height: 68px;
+    margin-left: 1px;
+    margin-bottom: 3px;
+}
+.firstRow, .secondRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#answer img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px black;
+}
